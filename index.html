@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Table</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+</head>
+<body>
+
+<div class="container clearfix">
+
+    <div id="filters">
+        <div class="filter-group">
+            <label for="commonNameFilter">Common Name</label>
+			<input type="text" id="commonNameFilter" placeholder="Filter by Common Name">
+		</div>
+        <div class="filter-group">
+            <label for="familyFilter">Family</label>
+			<input type="text" id="familyFilter" placeholder="Filter by Family">
+		</div>
+        <div class="filter-group">
+            <label for="scientificNameFilter">Scientific Name</label>
+			<input type="text" id="scientificNameFilter" placeholder="Filter by Scientific Name">
+		</div>
+        <div class="filter-group">
+            <label for="zipcodeFilter">Zipcode</label>
+			<input type="text" id="zipcodeFilter" placeholder="Filter by Zipcode">
+		</div>
+        
+		
+        <div class="filter-group">
+            <label for="plantZoneSlider">Plant Zone</label>
+			<div id="plantZoneSlider"></div>
+		</div>
+        <div class="filter-group">
+            <label for="maxHeightSlider">Max Height</label>
+			 <div id="maxHeightSlider"></div>
+		</div>
+		
+		
+        <div class="filter-group">
+            <label for="formsFilter">Forms</label>
+			<select multiple style="width: 100%" id="formsFilter"></select>
+		</div>
+        <div class="filter-group">
+            <label for="usesFilter">Uses</label>
+			<select multiple style="width: 100%" id="usesFilter"></select>
+		</div>
+        <div class="filter-group">
+            <label for="wildlifeValueFilter">Wildlife Value</label>
+			<select multiple style="width: 100%" id="wildlifeValueFilter"></select>
+		</div>
+        <div class="filter-group">
+            <label for="lightTolerancesFilter">Light Tolerances</label>
+			<select multiple style="width: 100%" id="lightTolerancesFilter"></select>
+		</div>
+        <div class="filter-group">
+            <label for="soilTolerancesFilter">Soil Tolerances</label>
+			<select multiple style="width: 100%" id="soilTolerancesFilter"></select>
+		</div>
+        <div class="filter-group">
+            <label for="flowerColorFilter">Flower Color</label>
+			<select multiple style="width: 100%" id="flowerColorFilter"></select>
+		</div>
+        <div class="filter-group">
+            <label for="floweringTimeFilter">Flowering Time</label>
+			<select multiple style="width: 100%" id="floweringTimeFilter">
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+				<option value="April">April</option>
+				<option value="May">May</option>
+				<option value="June">June</option>
+				<option value="July">July</option>
+				<option value="August">August</option>
+				<option value="September">September</option>
+				<option value="October">October</option>
+				<option value="November">November</option>
+				<option value="December">December</option>
+			</select>
+		</div>
+
+        <button onclick="applyFilters()">Apply Filters</button>
+    </div>
+
+    <div class="main-content">
+        <table border="1" id="plantsTable">
+			<thead>
+				<tr>
+					<th>Family</th>
+					<th>Scientific Name</th>
+					<th>Common Name</th>
+					<th>Forms</th>
+					<th>Uses</th>
+					<th>Wildlife Value</th>
+					<th>Light Tolerances</th>
+					<th>Soil Tolerances</th>
+					<th>Flower Color</th>
+					<th>Flowering Time</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+
+</html>
