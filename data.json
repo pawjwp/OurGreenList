@@ -1,4 +1,4 @@
-let jsonData = {
+{
 	"plantlist": [{
 			"family": "Aquifoliaceae",
 			"scientificName": "Ilex verticillata",
@@ -44,7 +44,7 @@ let jsonData = {
 		},
 		{
 			"family": "Aquifoliaceae",
-			"scientificName": "Ilex Glabra",
+			"scientificName": "Ilex glabra",
 			"commonNames": "Inkberry",
 			"currentRange": null,
 			"historicRange": null,
@@ -84,7 +84,7 @@ let jsonData = {
 		},
 		{
 			"family": "Dryopteridaceae",
-			"scientificName": "Matteuccia Struthiopteris",
+			"scientificName": "Matteuccia struthiopteris",
 			"commonNames": "Ostrich Fern",
 			"currentRange": null,
 			"historicRange": null,
@@ -117,7 +117,7 @@ let jsonData = {
 		},
 		{
 			"family": "Dryopteridaceae",
-			"scientificName": "Onoclea Sensibilis",
+			"scientificName": "Onoclea sensibilis",
 			"commonNames": "Sensitive Fern",
 			"currentRange": null,
 			"historicRange": null,
@@ -149,7 +149,7 @@ let jsonData = {
 		},
 		{
 			"family": "Dryopteridaceae",
-			"scientificName": "Osmunda Cinnamomea",
+			"scientificName": "Osmunda cinnamomea",
 			"commonNames": "Cinnamon Fern",
 			"currentRange": null,
 			"historicRange": null,
@@ -181,7 +181,7 @@ let jsonData = {
 		},
 		{
 			"family": "Dennstaedtiaceae",
-			"scientificName": "Pteridium Aquilinum",
+			"scientificName": "Pteridium aquilinum",
 			"commonNames": "Bracken Fern",
 			"currentRange": null,
 			"historicRange": null,
@@ -212,7 +212,7 @@ let jsonData = {
 		},
 		{
 			"family": "Poaceae",
-			"scientificName": "Andropogon Gerardii",
+			"scientificName": "Andropogon gerardii",
 			"commonNames": "Big Bluestem",
 			"currentRange": null,
 			"historicRange": null,
@@ -242,7 +242,7 @@ let jsonData = {
 		},
 		{
 			"family": "Poaceae",
-			"scientificName": "Tridens Flavus",
+			"scientificName": "Tridens flavus",
 			"commonNames": "Purpletop",
 			"currentRange": null,
 			"historicRange": null,
@@ -282,7 +282,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ranunculaceae",
-			"scientificName": "Aquilegia Canadensis",
+			"scientificName": "Aquilegia canadensis",
 			"commonNames": "Wild Columbine",
 			"currentRange": null,
 			"historicRange": null,
@@ -321,7 +321,7 @@ let jsonData = {
 		},
 		{
 			"family": "Aristolochiaceae",
-			"scientificName": "Asarum Canadense",
+			"scientificName": "Asarum canadense",
 			"commonNames": "Wild Ginger",
 			"currentRange": null,
 			"historicRange": null,
@@ -359,7 +359,7 @@ let jsonData = {
 		},
 		{
 			"family": "Cupressaceae",
-			"scientificName": "Taxodium Distichum",
+			"scientificName": "Taxodium distichum",
 			"commonNames": "Bald Cypress",
 			"currentRange": null,
 			"historicRange": null,
@@ -389,7 +389,7 @@ let jsonData = {
 		},
 		{
 			"family": "Anonaceae",
-			"scientificName": "Asimina Triloba",
+			"scientificName": "Asimina triloba",
 			"commonNames": "Pawpaw",
 			"currentRange": null,
 			"historicRange": null,
@@ -430,7 +430,7 @@ let jsonData = {
 		},
 		{
 			"family": "Adoxaceae",
-			"scientificName": "Viburnum Lantanoides",
+			"scientificName": "Viburnum lantanoides",
 			"commonNames": "Hobblebush",
 			"currentRange": null,
 			"historicRange": null,
@@ -465,7 +465,7 @@ let jsonData = {
 		},
 		{
 			"family": "Sapindaceae",
-			"scientificName": "Aesculus Flava",
+			"scientificName": "Aesculus flava",
 			"commonNames": "Yellow Buckeye",
 			"currentRange": null,
 			"historicRange": null,
@@ -507,7 +507,7 @@ let jsonData = {
 		},
 		{
 			"family": "Sapindaceae",
-			"scientificName": "Aesculus Glabra",
+			"scientificName": "Aesculus glabra",
 			"commonNames": "Ohio Buckeye",
 			"currentRange": null,
 			"historicRange": null,
@@ -550,7 +550,7 @@ let jsonData = {
 		},
 		{
 			"family": "Dryopteridaceae",
-			"scientificName": "Dryopteris Campyloptera",
+			"scientificName": "Dryopteris campyloptera",
 			"commonNames": "Mountain Wood Fern",
 			"currentRange": null,
 			"historicRange": null,
@@ -577,7 +577,7 @@ let jsonData = {
 		},
 		{
 			"family": "Dryopteridaceae",
-			"scientificName": "Dryopteris Celsa",
+			"scientificName": "Dryopteris celsa",
 			"commonNames": "Log Fern",
 			"currentRange": null,
 			"historicRange": null,
@@ -606,7 +606,7 @@ let jsonData = {
 		},
 		{
 			"family": "Equisetaceae",
-			"scientificName": "Equisetum Fluviatile",
+			"scientificName": "Equisetum fluviatile",
 			"commonNames": "Water Horsetail",
 			"currentRange": null,
 			"historicRange": null,
@@ -636,7 +636,7 @@ let jsonData = {
 		},
 		{
 			"family": "Dryopteridaceae",
-			"scientificName": "Polystichum Braunii",
+			"scientificName": "Polystichum braunii",
 			"commonNames": "Braun's Holly Fern",
 			"currentRange": null,
 			"historicRange": null,
@@ -665,7 +665,7 @@ let jsonData = {
 		},
 		{
 			"family": "Poaceae",
-			"scientificName": "Spoeobolus Heterolepis",
+			"scientificName": "Spoeobolus heterolepis",
 			"commonNames": "Prairie Dropseed",
 			"currentRange": null,
 			"historicRange": null,
@@ -694,7 +694,7 @@ let jsonData = {
 		},
 		{
 			"family": "Rosaceae",
-			"scientificName": "Aruncus Dioicus",
+			"scientificName": "Aruncus dioicus",
 			"commonNames": "Goats Beard",
 			"currentRange": null,
 			"historicRange": null,
@@ -726,7 +726,7 @@ let jsonData = {
 		},
 		{
 			"family": "Asteraceae",
-			"scientificName": "Chrysogyonum Virginianum",
+			"scientificName": "Chrysogyonum virginianum",
 			"commonNames": "Gold Star",
 			"currentRange": null,
 			"historicRange": null,
@@ -760,7 +760,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ranunculaceae",
-			"scientificName": "Delphinium Tricorne",
+			"scientificName": "Delphinium tricorne",
 			"commonNames": "Dwarf Larkspur",
 			"currentRange": null,
 			"historicRange": null,
@@ -795,7 +795,7 @@ let jsonData = {
 		},
 		{
 			"family": "Fumariaceae",
-			"scientificName": "Dicentra Eximia",
+			"scientificName": "Dicentra eximia",
 			"commonNames": "Bleeding Heart",
 			"currentRange": null,
 			"historicRange": null,
@@ -825,7 +825,7 @@ let jsonData = {
 		},
 		{
 			"family": "Rosaceae",
-			"scientificName": "Geum Rivale",
+			"scientificName": "Geum rivale",
 			"commonNames": "Water Avens",
 			"currentRange": null,
 			"historicRange": null,
@@ -856,7 +856,7 @@ let jsonData = {
 		},
 		{
 			"family": "Hydrophyllaceae",
-			"scientificName": "Hydrophyllum Canadense",
+			"scientificName": "Hydrophyllum canadense",
 			"commonNames": "Maple-leaved Waterleaf",
 			"currentRange": null,
 			"historicRange": null,
@@ -888,7 +888,7 @@ let jsonData = {
 		},
 		{
 			"family": "Polemoniaceae",
-			"scientificName": "Phlox Stolonifera",
+			"scientificName": "Phlox stolonifera",
 			"commonNames": "Creeping Phlox",
 			"currentRange": null,
 			"historicRange": null,
@@ -922,7 +922,7 @@ let jsonData = {
 		},
 		{
 			"family": "Asteraceae",
-			"scientificName": "Ratibida Pinnata",
+			"scientificName": "Ratibida pinnata",
 			"commonNames": "Eastern Cone Flower",
 			"currentRange": null,
 			"historicRange": null,
@@ -955,7 +955,7 @@ let jsonData = {
 		},
 		{
 			"family": "Rosaceae",
-			"scientificName": "Sanguisorba Canadensis",
+			"scientificName": "Sanguisorba canadensis",
 			"commonNames": "American Burnet",
 			"currentRange": null,
 			"historicRange": null,
@@ -987,7 +987,7 @@ let jsonData = {
 		},
 		{
 			"family": "Papaveraceae",
-			"scientificName": "Stylophorum Diphyllum",
+			"scientificName": "Stylophorum diphyllum",
 			"commonNames": "Celandine Poppy",
 			"currentRange": null,
 			"historicRange": null,
@@ -1019,7 +1019,7 @@ let jsonData = {
 		},
 		{
 			"family": "Commelinaceae",
-			"scientificName": "Tradescantia Virginiana",
+			"scientificName": "Tradescantia virginiana",
 			"commonNames": "Virginia Spiderwort",
 			"currentRange": null,
 			"historicRange": null,
@@ -1053,7 +1053,7 @@ let jsonData = {
 		},
 		{
 			"family": "Primulaceae",
-			"scientificName": "Trientalis Borealis",
+			"scientificName": "Trientalis borealis",
 			"commonNames": "Starflower",
 			"currentRange": null,
 			"historicRange": null,
@@ -1087,7 +1087,7 @@ let jsonData = {
 		},
 		{
 			"family": "Lillaceae",
-			"scientificName": "Trillium Grandiflorum",
+			"scientificName": "Trillium grandiflorum",
 			"commonNames": "White Trillium",
 			"currentRange": null,
 			"historicRange": null,
@@ -1120,7 +1120,7 @@ let jsonData = {
 		},
 		{
 			"family": "Rosaceae",
-			"scientificName": "Waldsteinia Fragarioides",
+			"scientificName": "Waldsteinia fragarioides",
 			"commonNames": "Barren Strawberry",
 			"currentRange": null,
 			"historicRange": null,
@@ -1153,7 +1153,7 @@ let jsonData = {
 		},
 		{
 			"family": "Calycanthaceae",
-			"scientificName": "Calycanthus Floridus",
+			"scientificName": "Calycanthus floridus",
 			"commonNames": "Sweetshrub",
 			"currentRange": null,
 			"historicRange": null,
@@ -1184,7 +1184,7 @@ let jsonData = {
 		},
 		{
 			"family": "Clethraceae",
-			"scientificName": "Clethra Acuminata",
+			"scientificName": "Clethra acuminata",
 			"commonNames": "Cinnamon Clethra",
 			"currentRange": null,
 			"historicRange": null,
@@ -1215,7 +1215,7 @@ let jsonData = {
 		},
 		{
 			"family": "Cornaceae",
-			"scientificName": "Cornus Canadensis",
+			"scientificName": "Cornus canadensis",
 			"commonNames": "Bunchberry",
 			"currentRange": null,
 			"historicRange": null,
@@ -1245,7 +1245,7 @@ let jsonData = {
 		},
 		{
 			"family": "Cornaceae",
-			"scientificName": "Cornus Rugosa",
+			"scientificName": "Cornus rugosa",
 			"commonNames": "Roundleaf Dogwood",
 			"currentRange": null,
 			"historicRange": null,
@@ -1279,7 +1279,7 @@ let jsonData = {
 		},
 		{
 			"family": "Cornaceae",
-			"scientificName": "Cornus Sericea",
+			"scientificName": "Cornus sericea",
 			"commonNames": "Red-osier Dogwood",
 			"currentRange": null,
 			"historicRange": null,
@@ -1309,7 +1309,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ericaceae",
-			"scientificName": "Gaylussacia Baccata",
+			"scientificName": "Gaylussacia baccata",
 			"commonNames": "Black Huckleberry",
 			"currentRange": null,
 			"historicRange": null,
@@ -1350,7 +1350,7 @@ let jsonData = {
 		},
 		{
 			"family": "Rosaceae",
-			"scientificName": "Amelanchier Laevis",
+			"scientificName": "Amelanchier laevis",
 			"commonNames": "Allegheny Serviceberry",
 			"currentRange": null,
 			"historicRange": null,
@@ -1390,7 +1390,7 @@ let jsonData = {
 		},
 		{
 			"family": "Juglandaceae",
-			"scientificName": "Carya Tomentosa",
+			"scientificName": "Carya tomentosa",
 			"commonNames": "Mockernut Hickory",
 			"currentRange": null,
 			"historicRange": null,
@@ -1435,7 +1435,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ulmaceae",
-			"scientificName": "Celtis Occidentalis",
+			"scientificName": "Celtis occidentalis",
 			"commonNames": "Hackberry",
 			"currentRange": null,
 			"historicRange": null,
@@ -1482,7 +1482,7 @@ let jsonData = {
 		},
 		{
 			"family": "Fabaceae",
-			"scientificName": "Cercis Canadensis",
+			"scientificName": "Cercis canadensis",
 			"commonNames": "Eastern Redbud",
 			"currentRange": null,
 			"historicRange": null,
@@ -1525,7 +1525,7 @@ let jsonData = {
 		},
 		{
 			"family": "Cornaceae",
-			"scientificName": "Cornus Florida",
+			"scientificName": "Cornus florida",
 			"commonNames": "Flowering Dogwood",
 			"currentRange": null,
 			"historicRange": null,
@@ -1567,7 +1567,7 @@ let jsonData = {
 		},
 		{
 			"family": "Rosaceae",
-			"scientificName": "Crataegus Crusgalli",
+			"scientificName": "Crataegus crusgalli",
 			"commonNames": "Cockspur Hawthorn",
 			"currentRange": null,
 			"historicRange": null,
@@ -1607,7 +1607,7 @@ let jsonData = {
 		},
 		{
 			"family": "Grossulariaceae",
-			"scientificName": "Itea Virginica",
+			"scientificName": "Itea virginica",
 			"commonNames": "Virginia Sweet Spire",
 			"currentRange": null,
 			"historicRange": null,
@@ -1642,7 +1642,7 @@ let jsonData = {
 		},
 		{
 			"family": "Cupressaceae",
-			"scientificName": "Juniperus Communis",
+			"scientificName": "Juniperus communis",
 			"commonNames": "Common Juniper",
 			"currentRange": null,
 			"historicRange": null,
@@ -1673,7 +1673,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ericaceae",
-			"scientificName": "Lyonia Mariana",
+			"scientificName": "Lyonia mariana",
 			"commonNames": "Stagger-bush",
 			"currentRange": null,
 			"historicRange": null,
@@ -1708,7 +1708,7 @@ let jsonData = {
 		},
 		{
 			"family": "Hydrangeaceae",
-			"scientificName": "Philadelphus Inodorus",
+			"scientificName": "Philadelphus inodorus",
 			"commonNames": "Mock-orange",
 			"currentRange": null,
 			"historicRange": null,
@@ -1743,7 +1743,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ericaceae",
-			"scientificName": "Rhododendron Arborescens",
+			"scientificName": "Rhododendron arborescens",
 			"commonNames": "Sweet Azalea",
 			"currentRange": null,
 			"historicRange": null,
@@ -1782,7 +1782,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ericaceae",
-			"scientificName": "Rhododendron Calendulaceum",
+			"scientificName": "Rhododendron calendulaceum",
 			"commonNames": "Flame Azalea",
 			"currentRange": null,
 			"historicRange": null,
@@ -1819,7 +1819,7 @@ let jsonData = {
 		},
 		{
 			"family": "Rosaceae",
-			"scientificName": "Rosa Virginiana",
+			"scientificName": "Rosa virginiana",
 			"commonNames": "Virginina Rose",
 			"currentRange": null,
 			"historicRange": null,
@@ -1853,7 +1853,7 @@ let jsonData = {
 		},
 		{
 			"family": "Salicaceae",
-			"scientificName": "Salix Candida",
+			"scientificName": "Salix candida",
 			"commonNames": "Hoary Willow",
 			"currentRange": null,
 			"historicRange": null,
@@ -1880,7 +1880,7 @@ let jsonData = {
 		},
 		{
 			"family": "Ericaceae",
-			"scientificName": "Vaccinium Angustifolium",
+			"scientificName": "Vaccinium angustifolium",
 			"commonNames": "Low Sweet Blueberry",
 			"currentRange": null,
 			"historicRange": null,
@@ -1910,7 +1910,7 @@ let jsonData = {
 		},
 		{
 			"family": "Caprifoliaceae",
-			"scientificName": "Viburnum Trilobum",
+			"scientificName": "Viburnum trilobum",
 			"commonNames": "American Cranberrybush",
 			"currentRange": null,
 			"historicRange": null,
@@ -1940,257 +1940,4 @@ let jsonData = {
 			"notes": null
 		}
 	]
-};
-
-const nameFilters = {'commonNames': true, 'family': false, 'scientificName': true};
-const sliderFilters = {'maxHeight': true};
-const dropdownFilters = {'forms': true, 'uses': true, 'wildlifeValue': true, 'lightTolerances': false, 'soilTolerances': false, 'flowerColor': false, 'floweringTime': false};
-const allFilters = {...nameFilters, ...sliderFilters, ...dropdownFilters};
-
-let plantsTableColumns = [];
-
-function toTitleCase(str) {
-	return str.replace(/\w\S*/g, function(txt) {
-		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-	});
 }
-
-function jsonToTitleCase(obj) {
-	for (let key in obj) {
-		if (typeof obj[key] === 'string') {
-			if (key !== "notes" && key !== "scientificName" && key !== "description") {
-				obj[key] = toTitleCase(obj[key]);
-			}
-		} else if (typeof obj[key] === 'object' && obj[key] !== null) {
-			jsonToTitleCase(obj[key]);
-		}
-	}
-}
-
-jsonToTitleCase(jsonData);
-
-// Keep track of unique values for the filters
-let uniqueValues = {
-	forms: new Set(),
-	uses: new Set(),
-	wildlifeValue: new Set(),
-	lightTolerances: new Set(),
-	soilTolerances: new Set(),
-	flowerColor: new Set(),
-};
-
-// Initialize the table
-function populateTable(data) {
-	let thead = document.getElementById('plantsTable').querySelector('thead');
-	let tbody = document.getElementById('plantsTable').querySelector('tbody');
-	thead.innerHTML = '';
-	tbody.innerHTML = '';
-
-
-	//let row = tbody.insertRow();
-	// Add checkbox header column
-	//row.insertCell().outerHTML = "<th></th>";
-	plantsTableColumns.push({checkbox: true});
-	
-	// Dynamically add other columns from allFilters
-	Object.keys(allFilters).forEach(filter => {
-		let headerID = filter.split(/(?=[A-Z])/).join(' '); // Convert camelCase to spaces
-		let headerName = `${headerID.charAt(0).toUpperCase() + headerID.slice(1)}` // Capitalize first letter
-		//row.insertCell().outerHTML = "<th>" + headerName + "</th>";
-		plantsTableColumns.push({field: headerID, title: headerName, sortable: true, visible: allFilters[filter]});
-	});
-
-	data.forEach(plant => {
-		let row = tbody.insertRow();
-		
-		// Insert cell for checkbox
-		row.insertCell()
-
-		// Insert cells for nameFilters
-		Object.keys(nameFilters).forEach(filter => {
-			row.insertCell().textContent = plant[filter] ?? "";
-		});
-
-		// Insert cells for sliderFilters
-		Object.keys(sliderFilters).forEach(filter => {
-			row.insertCell().textContent = plant[filter] ?? "";
-		});
-
-		// Insert cells for dropdownFilters
-		Object.keys(dropdownFilters).forEach(filter => {
-			row.insertCell().textContent = plant[filter]?.join(', ') ?? "";
-		});
-
-		// Collect unique values for filters
-		plant.forms?.forEach(item => uniqueValues.forms.add(item));
-		plant.uses?.forEach(item => uniqueValues.uses.add(item));
-		plant.wildlifeValue?.forEach(item => uniqueValues.wildlifeValue.add(item));
-		plant.lightTolerances?.forEach(item => uniqueValues.lightTolerances.add(item));
-		plant.soilTolerances?.forEach(item => uniqueValues.soilTolerances.add(item));
-		plant.flowerColor?.forEach(item => uniqueValues.flowerColor.add(item));
-	});
-
-	// Repopulate dropdown with contents of new table
-	// populateDropdownFilters();
-}
-
-// Function to populate dropdowns with unique values
-function populateDropdownFromSet(dropdownId, valueSet) {
-	let dropdown = document.getElementById(dropdownId);
-
-	// Removes values in the dropdown before repopulating
-	/*while (dropdown.firstChild) {
-		dropdown.removeChild(dropdown.firstChild);
-	}*/
-
-	valueSet.forEach(value => {
-		let option = document.createElement('option');
-		option.value = option.textContent = value;
-		dropdown.appendChild(option);
-	});
-}
-
-function populateDropdownFilters() {
-	const dropdownIds = ['forms', 'uses', 'wildlifeValue', 'lightTolerances', 'soilTolerances', 'flowerColor'];
-	dropdownIds.forEach(id => populateDropdownFromSet(`${id}Filter`, uniqueValues[id]));
-}
-
-// This will be the function to apply filters
-function applyFilters() {
-	let filteredData = jsonData.plantlist;
-
-	// Apply text filters
-	const commonNameFilter = document.getElementById('commonNameFilter').value.toLowerCase();
-	const familyFilter = document.getElementById('familyFilter').value.toLowerCase();
-	const scientificNameFilter = document.getElementById('scientificNameFilter').value.toLowerCase();
-
-	filteredData = filteredData.filter(plant => {
-		return plant.commonNames.toLowerCase().includes(commonNameFilter) &&
-			plant.family.toLowerCase().includes(familyFilter) &&
-			plant.scientificName.toLowerCase().includes(scientificNameFilter);
-	});
-
-	// Apply slider filters
-	let plantZoneSliderInstance = $("#plantZoneSlider").data("ionRangeSlider");
-	let minZone = plantZoneSliderInstance.result.from;
-	let maxZone = plantZoneSliderInstance.result.to;
-
-	let maxHeightSliderInstance = $("#maxHeightSlider").data("ionRangeSlider");
-	let minHeight = maxHeightSliderInstance.result.from;
-	let maxHeight = maxHeightSliderInstance.result.to;
-
-	filteredData = filteredData.filter(plant => {
-		return parseInt(plant.minPlantZone, 10) >= minZone &&
-			parseInt(plant.maxPlantZone, 10) <= maxZone &&
-			(parseInt(plant.maxHeight, 10) || 0) >= minHeight &&
-			(parseInt(plant.maxHeight, 10) || 0) <= maxHeight;
-	});
-
-	//Apply dropdown filters
-	Object.keys(dropdownFilters).forEach(filterName => {
-		const selectedValues = Array.from(document.getElementById(`${filterName}Filter`).selectedOptions).map(opt => opt.value);
-		if (selectedValues.length) {
-			filteredData = filteredData.filter(plant => plant[filterName] && selectedValues.some(val => plant[filterName].includes(val)));
-		}
-	});
-
-	// Repopulate the table with the filtered data
-	populateTable(filteredData);
-	
-	$('#plantsTable').bootstrapTable('refresh');
-	/*
-	$('#plantsTable').bootstrapTable('refreshOptions', {
-		checkboxHeader: true,
-		detailView: true
-	});*/
-}
-
-
-const detailsFilters = {'commonNames': true, 'family': true, 'scientificName': true, 'maxHeight': true, 'forms': true, 'uses': true, 'wildlifeValue': true, 'lightTolerances': true, 'soilTolerances': true, 'flowerColor': true, 'floweringTime': true};
-
-function detailFormatter(index, row) {
-	var html = [];
-
-	html.push('<table style="">');
-
-	$.each(row, function (key, value) {
-		var filterKey = key.replace(/\s+/g, '');
-		console.log(key)
-		console.log(": ")
-		console.log(value)
-		console.log("\n")
-		if (detailsFilters[filterKey]) {
-			html.push('<tr>');
-			html.push('<td style="padding: 3px 50px 3px 70px;"><b>' + `${key.charAt(0).toUpperCase() + key.slice(1)}` + '</b></td>');
-			html.push('<td style="padding: 3px 3px 3px 3px;">' + value + '</td>');
-			html.push('</tr>');
-		}
-	});
-
-	html.push('</table>');
-
-	return html.join('');
-}
-
-window.onload = function() {
-	populateTable(jsonData.plantlist);
-	populateDropdownFilters();
-}
-
-$(document).ready(function() {
-	$("#plantZoneSlider").ionRangeSlider({
-		type: "double",
-		min: 1,
-		max: 12,
-		from: 1,
-		to: 12,
-		hide_min_max: true,
-		skin: "round"
-	});
-
-	let maxHeight = Math.max(...jsonData.plantlist.map(plant => parseInt(plant.maxHeight, 10) || 0));
-
-	$("#maxHeightSlider").ionRangeSlider({
-		type: "double",
-		min: 0,
-		max: maxHeight,
-		from: 0,
-		to: maxHeight,
-		step: 1,
-		hide_min_max: true,
-		skin: "round"
-	});
-
-	Object.keys(dropdownFilters).forEach(filter => {
-		new MultipleSelect(`#${filter}Filter`, {
-			placeholder: `Select ${filter.replace(/([A-Z])/g, ' $1').toLowerCase()}...`
-		});
-	});
-
-	$('#plantsTable').bootstrapTable({
-		checkboxHeader: true,
-		clickToSelect: true,
-		detailView: true,
-		detailViewIcon: true,
-		detailViewByClick: false,
-		detailFormatter: detailFormatter,
-		maintainMetaData: true,
-		pageList: [10, 25, 50, 100, 200, 500],
-		pageSize: 100,
-		pagination: true,
-		search: true,
-		searchAlign: 'left',
-		showColumns: true,
-		/*sidePagination: "server",*/
-		smartDisplay: true,
-		sortable: true,
-		sortStable: true,
-		
-		columns: plantsTableColumns
-	})
-	
-	
-	$('#plantsTable').bootstrapTable('refreshOptions', {
-		height: window.innerHeight - 30
-	});
-});
