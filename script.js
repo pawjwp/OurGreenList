@@ -650,7 +650,7 @@ let jsonData = {
 			"uses": null,
 			"lightTolerances": [
 				"Shade",
-				"Patial Sun"
+				"Partial Sun"
 			],
 			"soilTolerances": [
 				"Rich",
@@ -708,7 +708,7 @@ let jsonData = {
 			"uses": null,
 			"lightTolerances": [
 				"Shade",
-				"Patial Sun"
+				"Partial Sun"
 			],
 			"soilTolerances": [
 				"Moist"
@@ -2022,71 +2022,47 @@ function populateDropdownFromSet(dropdownId, valueSet) {
 }
 
 function populateDropdownFilters() {
-	populateDropdownFromSet('formsFilter', uniqueValues.forms);
-	populateDropdownFromSet('usesFilter', uniqueValues.uses);
-	populateDropdownFromSet('wildlifeValueFilter', uniqueValues.wildlifeValue);
-	populateDropdownFromSet('lightTolerancesFilter', uniqueValues.lightTolerances);
-	populateDropdownFromSet('soilTolerancesFilter', uniqueValues.soilTolerances);
-	populateDropdownFromSet('flowerColorFilter', uniqueValues.flowerColor);
+	const dropdownIds = ['forms', 'uses', 'wildlifeValue', 'lightTolerances', 'soilTolerances', 'flowerColor'];
+	dropdownIds.forEach(id => populateDropdownFromSet(`${id}Filter`, uniqueValues[id]));
 }
 
 // This will be the function to apply filters
 function applyFilters() {
-	let filteredData = jsonData.plantlist;
+    let filteredData = jsonData.plantlist;
 
-	// Apply text filters
-	const commonNameFilter = document.getElementById('commonNameFilter').value.toLowerCase();
-	const familyFilter = document.getElementById('familyFilter').value.toLowerCase();
-	const scientificNameFilter = document.getElementById('scientificNameFilter').value.toLowerCase();
-	//... add other text filters ...
+    // Apply text filters
+    const commonNameFilter = document.getElementById('commonNameFilter').value.toLowerCase();
+    const familyFilter = document.getElementById('familyFilter').value.toLowerCase();
+    const scientificNameFilter = document.getElementById('scientificNameFilter').value.toLowerCase();
 
-	filteredData = filteredData.filter(plant => {
-		return plant.commonNames.toLowerCase().includes(commonNameFilter) &&
-			   plant.family.toLowerCase().includes(familyFilter) &&
-			   plant.scientificName.toLowerCase().includes(scientificNameFilter);
-	});
+    filteredData = filteredData.filter(plant => {
+        return plant.commonNames.toLowerCase().includes(commonNameFilter) &&
+               plant.family.toLowerCase().includes(familyFilter) &&
+               plant.scientificName.toLowerCase().includes(scientificNameFilter);
+    });
 
-	// Apply slider filters
-	let [minZone, maxZone] = $("#plantZoneSlider").slider("values");
-	filteredData = filteredData.filter(plant => {
-		return parseInt(plant.minPlantZone, 10) >= minZone &&
-			   parseInt(plant.maxPlantZone, 10) <= maxZone &&
-			   (parseInt(plant.maxHeight, 10) || 0) <= maxHeightFilter;
-	});
+    // Apply slider filters
+    let [minZone, maxZone] = $("#plantZoneSlider").slider("values");
+    let [minHeight, maxHeight] = $("#maxHeightSlider").slider("values");
 
-	// Apply dropdown filters
-	let formsValues = Array.from(document.getElementById('formsFilter').selectedOptions).map(opt => opt.value);
-	let usesValues = Array.from(document.getElementById('usesFilter').selectedOptions).map(opt => opt.value);
-	let wildlifeValueValues = Array.from(document.getElementById('wildlifeValueFilter').selectedOptions).map(opt => opt.value);
-	let lightTolerancesValues = Array.from(document.getElementById('lightTolerancesFilter').selectedOptions).map(opt => opt.value);
-	let soilTolerancesValues = Array.from(document.getElementById('soilTolerancesFilter').selectedOptions).map(opt => opt.value);
-	let flowerColorValues = Array.from(document.getElementById('flowerColorFilter').selectedOptions).map(opt => opt.value);
-	let floweringTimeValues = Array.from(document.getElementById('floweringTimeFilter').selectedOptions).map(opt => opt.value);
+    filteredData = filteredData.filter(plant => {
+        return parseInt(plant.minPlantZone, 10) >= minZone &&
+               parseInt(plant.maxPlantZone, 10) <= maxZone &&
+               (parseInt(plant.maxHeight, 10) || 0) >= minHeight && 
+               (parseInt(plant.maxHeight, 10) || 0) <= maxHeight;
+    });
 
-	if (formsValues.length) {
-		filteredData = filteredData.filter(plant => plant.forms && formsValues.some(val => plant.forms.includes(val)));
-	}
-	if (usesValues.length) {
-		filteredData = filteredData.filter(plant => plant.uses && usesValues.some(val => plant.uses.includes(val)));
-	}
-	if (wildlifeValueValues.length) {
-		filteredData = filteredData.filter(plant => plant.wildlifeValue && wildlifeValueValues.some(val => plant.wildlifeValue.includes(val)));
-	}
-	if (lightTolerancesValues.length) {
-		filteredData = filteredData.filter(plant => plant.lightTolerances && lightTolerancesValues.some(val => plant.lightTolerances.includes(val)));
-	}
-	if (soilTolerancesValues.length) {
-		filteredData = filteredData.filter(plant => plant.soilTolerances && soilTolerancesValues.some(val => plant.soilTolerances.includes(val)));
-	}
-	if (flowerColorValues.length) {
-		filteredData = filteredData.filter(plant => plant.flowerColor && flowerColorValues.some(val => plant.flowerColor.includes(val)));
-	}
-	if (floweringTimeValues.length) {
-		filteredData = filteredData.filter(plant => plant.floweringTime && floweringTimeValues.some(val => plant.floweringTime.includes(val)));
-	}
+    const dropdownFilters = ['forms', 'uses', 'wildlifeValue', 'lightTolerances', 'soilTolerances', 'flowerColor', 'floweringTime'];
 
-	// Repopulate the table with the filtered data
-	populateTable(filteredData);
+    dropdownFilters.forEach(filterName => {
+        const selectedValues = Array.from(document.getElementById(`${filterName}Filter`).selectedOptions).map(opt => opt.value);
+        if (selectedValues.length) {
+            filteredData = filteredData.filter(plant => plant[filterName] && selectedValues.some(val => plant[filterName].includes(val)));
+        }
+    });
+
+    // Repopulate the table with the filtered data
+    populateTable(filteredData);
 }
 
 // Once the page loads, populate the table with the sample data
@@ -2131,15 +2107,14 @@ $(document).ready(function() {
 		max: maxHeight,
 		values: [0, maxHeight],
 		slide: function(event, ui) {
-			$("#maxHeightMin").text(ui.values[0]);
-			$("#maxHeightMax").text(ui.values[1]);
 		}
-    });
+	});
 
-	$("#maxHeightMin").text($("#maxHeightSlider").slider("values", 0));
-	$("#maxHeightMax").text($("#maxHeightSlider").slider("values", 1));
-
-    $(".chosen-select").chosen({
-        width: "100%"
-    });
+	$(".chosen-select").chosen({
+		width: "100%"
+	});
+	
+	$(".chosen-container").addClass("border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline");
+	$(".chosen-choices").addClass("py-2 px-3");
+	$(".chosen-search-input").addClass("py-2 px-3");
 });
