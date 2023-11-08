@@ -1,78 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filterable Table</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OurGreenList</title>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+	
 	<script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container clearfix">
 
-    <div id="filters">
-        <div class="filter-group">
-            <label for="commonNameFilter">Common Name</label>
+	<div id="filters">
+		<div class="filter-group">
+			<label for="commonNameFilter">Common Name</label>
 			<input type="text" id="commonNameFilter" placeholder="Filter by Common Name">
 		</div>
-        <div class="filter-group">
-            <label for="familyFilter">Family</label>
+		<div class="filter-group">
+			<label for="familyFilter">Family</label>
 			<input type="text" id="familyFilter" placeholder="Filter by Family">
 		</div>
-        <div class="filter-group">
-            <label for="scientificNameFilter">Scientific Name</label>
+		<div class="filter-group">
+			<label for="scientificNameFilter">Scientific Name</label>
 			<input type="text" id="scientificNameFilter" placeholder="Filter by Scientific Name">
 		</div>
-        <div class="filter-group">
-            <label for="zipcodeFilter">Zipcode</label>
+		<div class="filter-group">
+			<label for="zipcodeFilter">Zipcode</label>
 			<input type="text" id="zipcodeFilter" placeholder="Filter by Zipcode">
 		</div>
-        
 		
-        <div class="filter-group">
-            <label for="plantZoneSlider">Plant Zone</label>
+		
+		<div class="filter-group">
+			<label for="plantZoneSlider">Plant Zone</label>
 			<div id="plantZoneSlider"></div>
 		</div>
-        <div class="filter-group">
-            <label for="maxHeightSlider">Max Height</label>
-			 <div id="maxHeightSlider"></div>
+		<div class="filter-group">
+			<label for="maxHeightSlider">Max Height</label>
+			<div id="maxHeightSlider"></div>
+			<span id="maxHeightMin"></span> - <span id="maxHeightMax"></span>
 		</div>
 		
 		
-        <div class="filter-group">
-            <label for="formsFilter">Forms</label>
-			<select multiple style="width: 100%" id="formsFilter"></select>
+		
+		<div class="filter-group">
+			<label for="formsFilter">Forms</label>
+			<select data-placeholder="Select forms..." multiple class="chosen-select" style="width: 100%" id="formsFilter"></select>
 		</div>
-        <div class="filter-group">
-            <label for="usesFilter">Uses</label>
-			<select multiple style="width: 100%" id="usesFilter"></select>
+		<div class="filter-group">
+			<label for="usesFilter">Uses</label>
+			<select data-placeholder="Select uses..." multiple class="chosen-select" style="width: 100%" id="usesFilter"></select>
 		</div>
-        <div class="filter-group">
-            <label for="wildlifeValueFilter">Wildlife Value</label>
-			<select multiple style="width: 100%" id="wildlifeValueFilter"></select>
+		<div class="filter-group">
+			<label for="wildlifeValueFilter">Wildlife Value</label>
+			<select data-placeholder="Select wildlife values..." multiple class="chosen-select" style="width: 100%" id="wildlifeValueFilter"></select>
 		</div>
-        <div class="filter-group">
-            <label for="lightTolerancesFilter">Light Tolerances</label>
-			<select multiple style="width: 100%" id="lightTolerancesFilter"></select>
+		<div class="filter-group">
+			<label for="lightTolerancesFilter">Light Tolerances</label>
+			<select data-placeholder="Select light tolerances..." multiple class="chosen-select" style="width: 100%" id="lightTolerancesFilter"></select>
 		</div>
-        <div class="filter-group">
-            <label for="soilTolerancesFilter">Soil Tolerances</label>
-			<select multiple style="width: 100%" id="soilTolerancesFilter"></select>
+		<div class="filter-group">
+			<label for="soilTolerancesFilter">Soil Tolerances</label>
+			<select data-placeholder="Select soil tolerances..." multiple class="chosen-select" style="width: 100%" id="soilTolerancesFilter"></select>
 		</div>
-        <div class="filter-group">
-            <label for="flowerColorFilter">Flower Color</label>
-			<select multiple style="width: 100%" id="flowerColorFilter"></select>
+		<div class="filter-group">
+			<label for="flowerColorFilter">Flower Color</label>
+			<select data-placeholder="Select flower colors..." multiple class="chosen-select" style="width: 100%" id="flowerColorFilter"></select>
 		</div>
-        <div class="filter-group">
-            <label for="floweringTimeFilter">Flowering Time</label>
-			<select multiple style="width: 100%" id="floweringTimeFilter">
+		<div class="filter-group">
+			<label for="floweringTimeFilter">Flowering Time</label>
+			<select data-placeholder="Select flowering  times..." multiple class="chosen-select" style="width: 100%" id="floweringTimeFilter">
 				<option value="January">January</option>
 				<option value="February">February</option>
 				<option value="March">March</option>
@@ -88,11 +93,11 @@
 			</select>
 		</div>
 
-        <button onclick="applyFilters()">Apply Filters</button>
-    </div>
+		<button onclick="applyFilters()">Apply Filters</button>
+	</div>
 
-    <div class="main-content">
-        <table border="1" id="plantsTable">
+	<div class="main-content">
+		<table border="1" id="plantsTable">
 			<thead>
 				<tr>
 					<th>Family</th>
@@ -109,8 +114,8 @@
 			</thead>
 			<tbody>
 			</tbody>
-        </table>
-    </div>
+		</table>
+	</div>
 
 </div>
 
