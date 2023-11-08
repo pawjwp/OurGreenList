@@ -1943,6 +1943,7 @@ let jsonData = {
 	]
 };
 
+const dropdownFilters = ['forms', 'uses', 'wildlifeValue', 'lightTolerances', 'soilTolerances', 'flowerColor', 'floweringTime'];
 
 function toTitleCase(str) {
 	return str.replace(/\w\S*/g, function(txt) {
@@ -2042,8 +2043,13 @@ function applyFilters() {
     });
 
     // Apply slider filters
-    let [minZone, maxZone] = $("#plantZoneSlider").slider("values");
-    let [minHeight, maxHeight] = $("#maxHeightSlider").slider("values");
+	let plantZoneSliderInstance = $("#plantZoneSlider").data("ionRangeSlider");
+	let minZone = plantZoneSliderInstance.result.from;
+	let maxZone = plantZoneSliderInstance.result.to;
+
+	let maxHeightSliderInstance = $("#maxHeightSlider").data("ionRangeSlider");
+	let minHeight = maxHeightSliderInstance.result.from;
+	let maxHeight = maxHeightSliderInstance.result.to;
 
     filteredData = filteredData.filter(plant => {
         return parseInt(plant.minPlantZone, 10) >= minZone &&
@@ -2051,8 +2057,6 @@ function applyFilters() {
                (parseInt(plant.maxHeight, 10) || 0) >= minHeight && 
                (parseInt(plant.maxHeight, 10) || 0) <= maxHeight;
     });
-
-    const dropdownFilters = ['forms', 'uses', 'wildlifeValue', 'lightTolerances', 'soilTolerances', 'flowerColor', 'floweringTime'];
 
     dropdownFilters.forEach(filterName => {
         const selectedValues = Array.from(document.getElementById(`${filterName}Filter`).selectedOptions).map(opt => opt.value);
@@ -2072,49 +2076,33 @@ window.onload = function() {
 	populateDropdownFilters();
 }
 
-$(document).ready(function() {
-	$( "#commonNameFilter" ).autocomplete({
-		source: jsonData.plantlist.map(plant => plant.commonNames),
-		minLength: 1
-	});
-	$( "#familyFilter" ).autocomplete({
-		source: jsonData.plantlist.map(plant => plant.family),
-		minLength: 1
-	});
-	$( "#scientificNameFilter" ).autocomplete({
-		source: jsonData.plantlist.map(plant => plant.scientificName),
-		minLength: 1
-	});
-
-	// Plant Zone Slider
-	$("#plantZoneSlider").slider({
-		range: true,
-		min: 1,
-		max: 12, // Zones typically range from 1 to 12, but adjust as needed
-		values: [1, 12], // Default values
-		slide: function(event, ui) {
-			// You can display the selected range values if needed
-		}
-	});
-
-	// Find the maximum height from the data for the Max Height Slider
+$(document).ready(function() {	
+   $("#plantZoneSlider").ionRangeSlider({
+       type: "double",
+       min: 1,
+       max: 12,
+       from: 1,
+       to: 12,
+	   hide_min_max: true,
+       skin: "round"
+   });
+	
 	let maxHeight = Math.max(...jsonData.plantlist.map(plant => parseInt(plant.maxHeight, 10) || 0));
 	
-	// Max Height Slider
-	$("#maxHeightSlider").slider({
-		range: true,
-		min: 0,
-		max: maxHeight,
-		values: [0, maxHeight],
-		slide: function(event, ui) {
-		}
-	});
-
-	$(".chosen-select").chosen({
-		width: "100%"
-	});
+   $("#maxHeightSlider").ionRangeSlider({
+       type: "double",
+       min: 0,
+       max: maxHeight,
+       from: 0,
+       to: maxHeight,
+	   step: 1,
+	   hide_min_max: true,
+       skin: "round"
+   });
 	
-	$(".chosen-container").addClass("border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline");
-	$(".chosen-choices").addClass("py-2 px-3");
-	$(".chosen-search-input").addClass("py-2 px-3");
+	dropdownFilters.forEach(filter => {
+		new MultipleSelect(`#${filter}Filter`, {
+			placeholder: `Select ${filter.replace(/([A-Z])/g, ' $1').toLowerCase()}...`
+		});
+	});
 });
