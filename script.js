@@ -1,1953 +1,2010 @@
-let jsonData = {
-	"plantlist": [{
-			"family": "Aquifoliaceae",
-			"scientificName": "Ilex verticillata",
-			"commonNames": "Winterberry Holly",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "9",
-			"forms": [
-				"Shrub"
-			],
-			"uses": [
-				"Hedge",
-				"Rain Garden"
-			],
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "5",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": "Dioecious"
-		},
-		{
-			"family": "Aquifoliaceae",
-			"scientificName": "Ilex Glabra",
-			"commonNames": "Inkberry",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"64"
-			],
-			"minPlantZone": "5",
-			"maxPlantZone": "9",
-			"forms": [
-				"Shrub"
-			],
-			"uses": [
-				"Evergreen Hedge"
-			],
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "3",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": "Dioecious"
-		},
-		{
-			"family": "Dryopteridaceae",
-			"scientificName": "Matteuccia Struthiopteris",
-			"commonNames": "Ostrich Fern",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "2",
-			"maxPlantZone": "6",
-			"forms": [
-				"Fern"
-			],
-			"uses": [
-				"Fiddleheads"
-			],
-			"lightTolerances": [
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "1.3",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Dryopteridaceae",
-			"scientificName": "Onoclea Sensibilis",
-			"commonNames": "Sensitive Fern",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "2",
-			"maxPlantZone": "10",
-			"forms": [
-				"Fern"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "1",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Dryopteridaceae",
-			"scientificName": "Osmunda Cinnamomea",
-			"commonNames": "Cinnamon Fern",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "2",
-			"maxPlantZone": "10",
-			"forms": [
-				"Fern"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "1.5",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Dennstaedtiaceae",
-			"scientificName": "Pteridium Aquilinum",
-			"commonNames": "Bracken Fern",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "10",
-			"forms": [
-				"Fern"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Dry",
-				"Sandy"
-			],
-			"maxHeight": "1.5",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Poaceae",
-			"scientificName": "Andropogon Gerardii",
-			"commonNames": "Big Bluestem",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "9",
-			"forms": [
-				"Graminoid"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun"
-			],
-			"soilTolerances": [
-				"Dry",
-				"Well Drained",
-				"Moist"
-			],
-			"maxHeight": "3",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Poaceae",
-			"scientificName": "Tridens Flavus",
-			"commonNames": "Purpletop",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"64",
-				"66",
-				"67",
-				"69",
-				"70"
-			],
-			"minPlantZone": "5",
-			"maxPlantZone": "10",
-			"forms": [
-				"Graminoid"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Well Drained",
-				"Moist"
-			],
-			"maxHeight": "0.15",
-			"flowerColor": [
-				"Purple"
-			],
-			"floweringTime": [
-				"July",
-				"August",
-				"September"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": "C4"
-		},
-		{
-			"family": "Ranunculaceae",
-			"scientificName": "Aquilegia Canadensis",
-			"commonNames": "Wild Columbine",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Well Drained"
-			],
-			"maxHeight": "0.8",
-			"flowerColor": [
-				"Red",
-				"Yellow"
-			],
-			"floweringTime": [
-				"April",
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators"
-			],
-			"notes": null
-		},
-		{
-			"family": "Aristolochiaceae",
-			"scientificName": "Asarum Canadense",
-			"commonNames": "Wild Ginger",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": [
-				"Groundcover"
-			],
-			"lightTolerances": [
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.1",
-			"flowerColor": [
-				"Red",
-				"Purple"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Cupressaceae",
-			"scientificName": "Taxodium Distichum",
-			"commonNames": "Bald Cypress",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"64"
-			],
-			"minPlantZone": "4",
-			"maxPlantZone": "11",
-			"forms": [
-				"Tree"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "40",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Anonaceae",
-			"scientificName": "Asimina Triloba",
-			"commonNames": "Pawpaw",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"64",
-				"66",
-				"67",
-				"69",
-				"70"
-			],
-			"minPlantZone": "5",
-			"maxPlantZone": "8",
-			"forms": [
-				"Tree",
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": null,
-			"maxHeight": null,
-			"flowerColor": [
-				"Red",
-				"Purple"
-			],
-			"floweringTime": [
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Adoxaceae",
-			"scientificName": "Viburnum Lantanoides",
-			"commonNames": "Hobblebush",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"60",
-				"62",
-				"69"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "5",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": null,
-			"maxHeight": "2",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Sapindaceae",
-			"scientificName": "Aesculus Flava",
-			"commonNames": "Yellow Buckeye",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"67",
-				"69",
-				"70"
-			],
-			"minPlantZone": "4",
-			"maxPlantZone": "8",
-			"forms": [
-				"Tree"
-			],
-			"uses": [
-				"Specimen"
-			],
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Well Drained",
-				"Moist"
-			],
-			"maxHeight": "30",
-			"flowerColor": [
-				"Yellow"
-			],
-			"floweringTime": [
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Sapindaceae",
-			"scientificName": "Aesculus Glabra",
-			"commonNames": "Ohio Buckeye",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"67",
-				"69",
-				"70"
-			],
-			"minPlantZone": "4",
-			"maxPlantZone": "7",
-			"forms": [
-				"Tree"
-			],
-			"uses": [
-				"Specimen"
-			],
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Well Drained",
-				"Moist"
-			],
-			"maxHeight": "20",
-			"flowerColor": [
-				"Yellow"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Dryopteridaceae",
-			"scientificName": "Dryopteris Campyloptera",
-			"commonNames": "Mountain Wood Fern",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "7",
-			"forms": [
-				"Fern"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.9",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Dryopteridaceae",
-			"scientificName": "Dryopteris Celsa",
-			"commonNames": "Log Fern",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "5",
-			"maxPlantZone": "9",
-			"forms": [
-				"Fern"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Rich",
-				"Moist To Wet",
-				"Acidic"
-			],
-			"maxHeight": "0.9",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Equisetaceae",
-			"scientificName": "Equisetum Fluviatile",
-			"commonNames": "Water Horsetail",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "1",
-			"maxPlantZone": "6",
-			"forms": [
-				"Fern"
-			],
-			"uses": [
-				"Water Foliage"
-			],
-			"lightTolerances": [
-				"Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Wet",
-				"Shallow Standing Water"
-			],
-			"maxHeight": "0.9",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Dryopteridaceae",
-			"scientificName": "Polystichum Braunii",
-			"commonNames": "Braun's Holly Fern",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "8",
-			"forms": [
-				"Fern"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Shade",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Rich",
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "0.7",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Poaceae",
-			"scientificName": "Spoeobolus Heterolepis",
-			"commonNames": "Prairie Dropseed",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Grass"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun"
-			],
-			"soilTolerances": [
-				"Well Drained",
-				"Dry"
-			],
-			"maxHeight": "0.9",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Rosaceae",
-			"scientificName": "Aruncus Dioicus",
-			"commonNames": "Goats Beard",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Shade",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": null,
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Asteraceae",
-			"scientificName": "Chrysogyonum Virginianum",
-			"commonNames": "Gold Star",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Shade",
-				"Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Dry"
-			],
-			"maxHeight": "0.3",
-			"flowerColor": [
-				"Yellow"
-			],
-			"floweringTime": [
-				"April",
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Ranunculaceae",
-			"scientificName": "Delphinium Tricorne",
-			"commonNames": "Dwarf Larkspur",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Shade",
-				"Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "0.1",
-			"flowerColor": [
-				"White",
-				"Purple",
-				"Pink"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Fumariaceae",
-			"scientificName": "Dicentra Eximia",
-			"commonNames": "Bleeding Heart",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Shade",
-				"Sun"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.5",
-			"flowerColor": [
-				"White",
-				"Red"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Rosaceae",
-			"scientificName": "Geum Rivale",
-			"commonNames": "Water Avens",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "0.6",
-			"flowerColor": [
-				"White",
-				"Red"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Hydrophyllaceae",
-			"scientificName": "Hydrophyllum Canadense",
-			"commonNames": "Maple-leaved Waterleaf",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Rich",
-				"Moist"
-			],
-			"maxHeight": "0.4",
-			"flowerColor": [
-				"White",
-				"Purple",
-				"Pink"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Polemoniaceae",
-			"scientificName": "Phlox Stolonifera",
-			"commonNames": "Creeping Phlox",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Sun",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.3",
-			"flowerColor": [
-				"Blue",
-				"Purple",
-				"White"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Asteraceae",
-			"scientificName": "Ratibida Pinnata",
-			"commonNames": "Eastern Cone Flower",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.8",
-			"flowerColor": [
-				"Yellow"
-			],
-			"floweringTime": [
-				"July",
-				"August",
-				"September"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Rosaceae",
-			"scientificName": "Sanguisorba Canadensis",
-			"commonNames": "American Burnet",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "1.8",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				" August",
-				"September"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Papaveraceae",
-			"scientificName": "Stylophorum Diphyllum",
-			"commonNames": "Celandine Poppy",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.5",
-			"flowerColor": [
-				"Yellow"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Commelinaceae",
-			"scientificName": "Tradescantia Virginiana",
-			"commonNames": "Virginia Spiderwort",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "9",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.6",
-			"flowerColor": [
-				"Purple",
-				"Blue",
-				"White"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Primulaceae",
-			"scientificName": "Trientalis Borealis",
-			"commonNames": "Starflower",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "2",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Rich",
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "0.2",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Lillaceae",
-			"scientificName": "Trillium Grandiflorum",
-			"commonNames": "White Trillium",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "0.5",
-			"flowerColor": [
-				"White",
-				"Pink"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Rosaceae",
-			"scientificName": "Waldsteinia Fragarioides",
-			"commonNames": "Barren Strawberry",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "8",
-			"forms": [
-				"Wildflower"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Dry"
-			],
-			"maxHeight": "0.2",
-			"flowerColor": [
-				"Yellow"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Calycanthaceae",
-			"scientificName": "Calycanthus Floridus",
-			"commonNames": "Sweetshrub",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Rich",
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "2.4",
-			"flowerColor": [
-				"Red"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Clethraceae",
-			"scientificName": "Clethra Acuminata",
-			"commonNames": "Cinnamon Clethra",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "5",
-			"maxPlantZone": "8",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Rich",
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "4.6",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Cornaceae",
-			"scientificName": "Cornus Canadensis",
-			"commonNames": "Bunchberry",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "2",
-			"maxPlantZone": "6",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Shade",
-				"Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Acidic"
-			],
-			"maxHeight": "0.2",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Cornaceae",
-			"scientificName": "Cornus Rugosa",
-			"commonNames": "Roundleaf Dogwood",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "7",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Dry"
-			],
-			"maxHeight": "3",
-			"flowerColor": [
-				"Blue",
-				"Pink"
-			],
-			"floweringTime": [
-				"June",
-				"July"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Cornaceae",
-			"scientificName": "Cornus Sericea",
-			"commonNames": "Red-osier Dogwood",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "2",
-			"maxPlantZone": "7",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "2.7",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Ericaceae",
-			"scientificName": "Gaylussacia Baccata",
-			"commonNames": "Black Huckleberry",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": null,
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Dry",
-				"Well Drained",
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "1.1",
-			"flowerColor": [
-				"Yellow",
-				"Green"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Rosaceae",
-			"scientificName": "Amelanchier Laevis",
-			"commonNames": "Allegheny Serviceberry",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "4",
-			"maxPlantZone": "8",
-			"forms": [
-				"Tree",
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Dry"
-			],
-			"maxHeight": "12.2",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"March",
-				"April"
-			],
-			"deerTolerance": "Mild",
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Juglandaceae",
-			"scientificName": "Carya Tomentosa",
-			"commonNames": "Mockernut Hickory",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"58",
-				"60",
-				"62",
-				"63",
-				"64",
-				"66",
-				"67",
-				"69",
-				"70"
-			],
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Tree"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Dry"
-			],
-			"maxHeight": "24.4",
-			"flowerColor": [
-				"Green"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Ulmaceae",
-			"scientificName": "Celtis Occidentalis",
-			"commonNames": "Hackberry",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"58",
-				"62",
-				"63",
-				"64",
-				"66",
-				"67",
-				"69",
-				"70"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "9",
-			"forms": [
-				"Tree",
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "24.4",
-			"flowerColor": [
-				"Yellow",
-				"Green"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Fabaceae",
-			"scientificName": "Cercis Canadensis",
-			"commonNames": "Eastern Redbud",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"58",
-				"63",
-				"64",
-				"66",
-				"67",
-				"69",
-				"70"
-			],
-			"minPlantZone": "4",
-			"maxPlantZone": "9",
-			"forms": [
-				"Tree",
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "9.1",
-			"flowerColor": [
-				"Pink"
-			],
-			"floweringTime": [
-				"April"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators"
-			],
-			"notes": null
-		},
-		{
-			"family": "Cornaceae",
-			"scientificName": "Cornus Florida",
-			"commonNames": "Flowering Dogwood",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "5",
-			"maxPlantZone": "9",
-			"forms": [
-				"Tree",
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "15.2",
-			"flowerColor": [
-				"White",
-				"Pink"
-			],
-			"floweringTime": [
-				"March",
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Rosaceae",
-			"scientificName": "Crataegus Crusgalli",
-			"commonNames": "Cockspur Hawthorn",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": [
-				"All"
-			],
-			"minPlantZone": "3",
-			"maxPlantZone": "7",
-			"forms": [
-				"Tree",
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "10.7",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Pollinators",
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Grossulariaceae",
-			"scientificName": "Itea Virginica",
-			"commonNames": "Virginia Sweet Spire",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "5",
-			"maxPlantZone": "9",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade",
-				"Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "2.4",
-			"flowerColor": [
-				"White"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Cupressaceae",
-			"scientificName": "Juniperus Communis",
-			"commonNames": "Common Juniper",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "2",
-			"maxPlantZone": "6",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun"
-			],
-			"soilTolerances": [
-				"Dry",
-				"Well Drained",
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "3",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Ericaceae",
-			"scientificName": "Lyonia Mariana",
-			"commonNames": "Stagger-bush",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "5",
-			"maxPlantZone": "9",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Partial Sun",
-				"Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "1.8",
-			"flowerColor": [
-				"White",
-				"Pink"
-			],
-			"floweringTime": [
-				"April",
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Hydrangeaceae",
-			"scientificName": "Philadelphus Inodorus",
-			"commonNames": "Mock-orange",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "6",
-			"maxPlantZone": "8",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist"
-			],
-			"maxHeight": "3",
-			"flowerColor": [
-				"Orange"
-			],
-			"floweringTime": [
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Ericaceae",
-			"scientificName": "Rhododendron Arborescens",
-			"commonNames": "Sweet Azalea",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "4",
-			"maxPlantZone": "7",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Well Drained",
-				"Acidic"
-			],
-			"maxHeight": "4.6",
-			"flowerColor": [
-				"White",
-				"Pink",
-				"Red",
-				"Yellow"
-			],
-			"floweringTime": [
-				"April",
-				"May",
-				"June"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Ericaceae",
-			"scientificName": "Rhododendron Calendulaceum",
-			"commonNames": "Flame Azalea",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "5",
-			"maxPlantZone": "7",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Well Drained",
-				"Acidic"
-			],
-			"maxHeight": "3",
-			"flowerColor": [
-				"Yellow",
-				"Orange",
-				"Red"
-			],
-			"floweringTime": [
-				"April",
-				"May"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Rosaceae",
-			"scientificName": "Rosa Virginiana",
-			"commonNames": "Virginina Rose",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "3",
-			"maxPlantZone": "7",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun"
-			],
-			"soilTolerances": [
-				"Dry",
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "1.8",
-			"flowerColor": [
-				"Pink"
-			],
-			"floweringTime": [
-				"July",
-				"August",
-				"September"
-			],
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Salicaceae",
-			"scientificName": "Salix Candida",
-			"commonNames": "Hoary Willow",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "2",
-			"maxPlantZone": "6",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Wet"
-			],
-			"maxHeight": "1.5",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": null,
-			"notes": null
-		},
-		{
-			"family": "Ericaceae",
-			"scientificName": "Vaccinium Angustifolium",
-			"commonNames": "Low Sweet Blueberry",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "2",
-			"maxPlantZone": "5",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun"
-			],
-			"soilTolerances": [
-				"Dry",
-				"Moist",
-				"Acidic"
-			],
-			"maxHeight": "0.6",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Fruit"
-			],
-			"notes": null
-		},
-		{
-			"family": "Caprifoliaceae",
-			"scientificName": "Viburnum Trilobum",
-			"commonNames": "American Cranberrybush",
-			"currentRange": null,
-			"historicRange": null,
-			"ecoregions": null,
-			"minPlantZone": "2",
-			"maxPlantZone": "7",
-			"forms": [
-				"Shrub"
-			],
-			"uses": null,
-			"lightTolerances": [
-				"Sun",
-				"Partial Sun",
-				"Partial Shade"
-			],
-			"soilTolerances": [
-				"Moist",
-				"Well Drained"
-			],
-			"maxHeight": "3.7",
-			"flowerColor": null,
-			"floweringTime": null,
-			"deerTolerance": null,
-			"wildlifeValue": [
-				"Fruit"
-			],
-			"notes": null
-		}
-	]
-};
+let jsonData = [
+	{
+		"family": "Aquifoliaceae",
+		"genus": "Ilex",
+		"species": "verticillata",
+		"commonNames": "Winterberry Holly",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 9,
+		"forms": [
+			"Shrub"
+		],
+		"uses": [
+			"Hedge",
+			"Rain Garden"
+		],
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 5,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": "Dioecious"
+	},
+	{
+		"family": "Aquifoliaceae",
+		"genus": "Ilex",
+		"species": "glabra",
+		"commonNames": "Inkberry",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"64"
+		],
+		"minPlantZone": 5,
+		"maxPlantZone": 9,
+		"forms": [
+			"Shrub"
+		],
+		"uses": [
+			"Evergreen Hedge"
+		],
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 3,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": "Dioecious"
+	},
+	{
+		"family": "Dryopteridaceae",
+		"genus": "Matteuccia",
+		"species": "struthiopteris",
+		"commonNames": "Ostrich Fern",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 2,
+		"maxPlantZone": 6,
+		"forms": [
+			"Fern"
+		],
+		"uses": [
+			"Fiddleheads"
+		],
+		"lightTolerances": [
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 1.3,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Dryopteridaceae",
+		"genus": "Onoclea",
+		"species": "sensibilis",
+		"commonNames": "Sensitive Fern",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 2,
+		"maxPlantZone": 10,
+		"forms": [
+			"Fern"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 1,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Dryopteridaceae",
+		"genus": "Osmunda",
+		"species": "cinnamomea",
+		"commonNames": "Cinnamon Fern",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 2,
+		"maxPlantZone": 10,
+		"forms": [
+			"Fern"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 1.5,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Dennstaedtiaceae",
+		"genus": "Pteridium",
+		"species": "aquilinum",
+		"commonNames": "Bracken Fern",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 10,
+		"forms": [
+			"Fern"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Dry",
+			"Sandy"
+		],
+		"maxHeight": 1.5,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Poaceae",
+		"genus": "Andropogon",
+		"species": "gerardii",
+		"commonNames": "Big Bluestem",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 9,
+		"forms": [
+			"Graminoid"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun"
+		],
+		"soilTolerances": [
+			"Dry",
+			"Well Drained",
+			"Moist"
+		],
+		"maxHeight": 3,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Poaceae",
+		"genus": "Tridens",
+		"species": "flavus",
+		"commonNames": "Purpletop",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"64",
+			"66",
+			"67",
+			"69",
+			"70"
+		],
+		"minPlantZone": 5,
+		"maxPlantZone": 10,
+		"forms": [
+			"Graminoid"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Well Drained",
+			"Moist"
+		],
+		"maxHeight": 0.15,
+		"flowerColor": [
+			"Purple"
+		],
+		"floweringTime": [
+			"July",
+			"August",
+			"September"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": "C4"
+	},
+	{
+		"family": "Ranunculaceae",
+		"genus": "Aquilegia",
+		"species": "canadensis",
+		"commonNames": "Wild Columbine",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Well Drained"
+		],
+		"maxHeight": 0.8,
+		"flowerColor": [
+			"Red",
+			"Yellow"
+		],
+		"floweringTime": [
+			"April",
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators"
+		],
+		"notes": null
+	},
+	{
+		"family": "Aristolochiaceae",
+		"genus": "Asarum",
+		"species": "canadense",
+		"commonNames": "Wild Ginger",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": [
+			"Groundcover"
+		],
+		"lightTolerances": [
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.1,
+		"flowerColor": [
+			"Red",
+			"Purple"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Cupressaceae",
+		"genus": "Taxodium",
+		"species": "distichum",
+		"commonNames": "Bald Cypress",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"64"
+		],
+		"minPlantZone": 4,
+		"maxPlantZone": 11,
+		"forms": [
+			"Tree"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 40,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Anonaceae",
+		"genus": "Asimina",
+		"species": "triloba",
+		"commonNames": "Pawpaw",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"64",
+			"66",
+			"67",
+			"69",
+			"70"
+		],
+		"minPlantZone": 5,
+		"maxPlantZone": 8,
+		"forms": [
+			"Tree",
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": null,
+		"maxHeight": null,
+		"flowerColor": [
+			"Red",
+			"Purple"
+		],
+		"floweringTime": [
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Adoxaceae",
+		"genus": "Viburnum",
+		"species": "lantanoides",
+		"commonNames": "Hobblebush",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"60",
+			"62",
+			"69"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 5,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": null,
+		"maxHeight": 2,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Sapindaceae",
+		"genus": "Aesculus",
+		"species": "flava",
+		"commonNames": "Yellow Buckeye",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"67",
+			"69",
+			"70"
+		],
+		"minPlantZone": 4,
+		"maxPlantZone": 8,
+		"forms": [
+			"Tree"
+		],
+		"uses": [
+			"Specimen"
+		],
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Well Drained",
+			"Moist"
+		],
+		"maxHeight": 30,
+		"flowerColor": [
+			"Yellow"
+		],
+		"floweringTime": [
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Sapindaceae",
+		"genus": "Aesculus",
+		"species": "glabra",
+		"commonNames": "Ohio Buckeye",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"67",
+			"69",
+			"70"
+		],
+		"minPlantZone": 4,
+		"maxPlantZone": 7,
+		"forms": [
+			"Tree"
+		],
+		"uses": [
+			"Specimen"
+		],
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Well Drained",
+			"Moist"
+		],
+		"maxHeight": 20,
+		"flowerColor": [
+			"Yellow"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Dryopteridaceae",
+		"genus": "Dryopteris",
+		"species": "campyloptera",
+		"commonNames": "Mountain Wood Fern",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 7,
+		"forms": [
+			"Fern"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.9,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Dryopteridaceae",
+		"genus": "Dryopteris",
+		"species": "celsa",
+		"commonNames": "Log Fern",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 5,
+		"maxPlantZone": 9,
+		"forms": [
+			"Fern"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Rich",
+			"Moist To Wet",
+			"Acidic"
+		],
+		"maxHeight": 0.9,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Equisetaceae",
+		"genus": "Equisetum",
+		"species": "fluviatile",
+		"commonNames": "Water Horsetail",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 1,
+		"maxPlantZone": 6,
+		"forms": [
+			"Fern"
+		],
+		"uses": [
+			"Water Foliage"
+		],
+		"lightTolerances": [
+			"Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Wet",
+			"Shallow Standing Water"
+		],
+		"maxHeight": 0.9,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Dryopteridaceae",
+		"genus": "Polystichum",
+		"species": "braunii",
+		"commonNames": "Braun's Holly Fern",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 8,
+		"forms": [
+			"Fern"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Shade",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Rich",
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 0.7,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Poaceae",
+		"genus": "Spoeobolus",
+		"species": "heterolepis",
+		"commonNames": "Prairie Dropseed",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Grass"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun"
+		],
+		"soilTolerances": [
+			"Well Drained",
+			"Dry"
+		],
+		"maxHeight": 0.9,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Rosaceae",
+		"genus": "Aruncus",
+		"species": "dioicus",
+		"commonNames": "Goats Beard",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Shade",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": null,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Asteraceae",
+		"genus": "Chrysogyonum",
+		"species": "virginianum",
+		"commonNames": "Gold Star",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Shade",
+			"Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Dry"
+		],
+		"maxHeight": 0.3,
+		"flowerColor": [
+			"Yellow"
+		],
+		"floweringTime": [
+			"April",
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Ranunculaceae",
+		"genus": "Delphinium",
+		"species": "tricorne",
+		"commonNames": "Dwarf Larkspur",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Shade",
+			"Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 0.1,
+		"flowerColor": [
+			"White",
+			"Purple",
+			"Pink"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Fumariaceae",
+		"genus": "Dicentra",
+		"species": "eximia",
+		"commonNames": "Bleeding Heart",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Shade",
+			"Sun"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.5,
+		"flowerColor": [
+			"White",
+			"Red"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Rosaceae",
+		"genus": "Geum",
+		"species": "rivale",
+		"commonNames": "Water Avens",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 0.6,
+		"flowerColor": [
+			"White",
+			"Red"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Hydrophyllaceae",
+		"genus": "Hydrophyllum",
+		"species": "canadense",
+		"commonNames": "Maple-leaved Waterleaf",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Rich",
+			"Moist"
+		],
+		"maxHeight": 0.4,
+		"flowerColor": [
+			"White",
+			"Purple",
+			"Pink"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Polemoniaceae",
+		"genus": "Phlox",
+		"species": "stolonifera",
+		"commonNames": "Creeping Phlox",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Sun",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.3,
+		"flowerColor": [
+			"Blue",
+			"Purple",
+			"White"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Asteraceae",
+		"genus": "Ratibida",
+		"species": "pinnata",
+		"commonNames": "Eastern Cone Flower",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.8,
+		"flowerColor": [
+			"Yellow"
+		],
+		"floweringTime": [
+			"July",
+			"August",
+			"September"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Rosaceae",
+		"genus": "Sanguisorba",
+		"species": "canadensis",
+		"commonNames": "American Burnet",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 1.8,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			" August",
+			"September"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Papaveraceae",
+		"genus": "Stylophorum",
+		"species": "diphyllum",
+		"commonNames": "Celandine Poppy",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.5,
+		"flowerColor": [
+			"Yellow"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Commelinaceae",
+		"genus": "Tradescantia",
+		"species": "virginiana",
+		"commonNames": "Virginia Spiderwort",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 9,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.6,
+		"flowerColor": [
+			"Purple",
+			"Blue",
+			"White"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Primulaceae",
+		"genus": "Trientalis",
+		"species": "borealis",
+		"commonNames": "Starflower",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 2,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Rich",
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 0.2,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Lillaceae",
+		"genus": "Trillium",
+		"species": "grandiflorum",
+		"commonNames": "White Trillium",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 0.5,
+		"flowerColor": [
+			"White",
+			"Pink"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Rosaceae",
+		"genus": "Waldsteinia",
+		"species": "fragarioides",
+		"commonNames": "Barren Strawberry",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 8,
+		"forms": [
+			"Wildflower"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Dry"
+		],
+		"maxHeight": 0.2,
+		"flowerColor": [
+			"Yellow"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Calycanthaceae",
+		"genus": "Calycanthus",
+		"species": "floridus",
+		"commonNames": "Sweetshrub",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Rich",
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 2.4,
+		"flowerColor": [
+			"Red"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Clethraceae",
+		"genus": "Clethra",
+		"species": "acuminata",
+		"commonNames": "Cinnamon Clethra",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 5,
+		"maxPlantZone": 8,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Rich",
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 4.6,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Cornaceae",
+		"genus": "Cornus",
+		"species": "canadensis",
+		"commonNames": "Bunchberry",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 2,
+		"maxPlantZone": 6,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Shade",
+			"Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Acidic"
+		],
+		"maxHeight": 0.2,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Cornaceae",
+		"genus": "Cornus",
+		"species": "rugosa",
+		"commonNames": "Roundleaf Dogwood",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 7,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Dry"
+		],
+		"maxHeight": 3,
+		"flowerColor": [
+			"Blue",
+			"Pink"
+		],
+		"floweringTime": [
+			"June",
+			"July"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Cornaceae",
+		"genus": "Cornus",
+		"species": "sericea",
+		"commonNames": "Red-osier Dogwood",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 2,
+		"maxPlantZone": 7,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 2.7,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Ericaceae",
+		"genus": "Gaylussacia",
+		"species": "baccata",
+		"commonNames": "Black Huckleberry",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": null,
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Dry",
+			"Well Drained",
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 1.1,
+		"flowerColor": [
+			"Yellow",
+			"Green"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Rosaceae",
+		"genus": "Amelanchier",
+		"species": "laevis",
+		"commonNames": "Allegheny Serviceberry",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 4,
+		"maxPlantZone": 8,
+		"forms": [
+			"Tree",
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Dry"
+		],
+		"maxHeight": 12.2,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"March",
+			"April"
+		],
+		"deerTolerance": "Mild",
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Juglandaceae",
+		"genus": "Carya",
+		"species": "tomentosa",
+		"commonNames": "Mockernut Hickory",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"58",
+			"60",
+			"62",
+			"63",
+			"64",
+			"66",
+			"67",
+			"69",
+			"70"
+		],
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Tree"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Dry"
+		],
+		"maxHeight": 24.4,
+		"flowerColor": [
+			"Green"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Ulmaceae",
+		"genus": "Celtis",
+		"species": "occidentalis",
+		"commonNames": "Hackberry",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"58",
+			"62",
+			"63",
+			"64",
+			"66",
+			"67",
+			"69",
+			"70"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 9,
+		"forms": [
+			"Tree",
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 24.4,
+		"flowerColor": [
+			"Yellow",
+			"Green"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Fabaceae",
+		"genus": "Cercis",
+		"species": "canadensis",
+		"commonNames": "Eastern Redbud",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"58",
+			"63",
+			"64",
+			"66",
+			"67",
+			"69",
+			"70"
+		],
+		"minPlantZone": 4,
+		"maxPlantZone": 9,
+		"forms": [
+			"Tree",
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 9.1,
+		"flowerColor": [
+			"Pink"
+		],
+		"floweringTime": [
+			"April"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators"
+		],
+		"notes": null
+	},
+	{
+		"family": "Cornaceae",
+		"genus": "Cornus",
+		"species": "florida",
+		"commonNames": "Flowering Dogwood",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 5,
+		"maxPlantZone": 9,
+		"forms": [
+			"Tree",
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 15.2,
+		"flowerColor": [
+			"White",
+			"Pink"
+		],
+		"floweringTime": [
+			"March",
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Rosaceae",
+		"genus": "Crataegus",
+		"species": "crusgalli",
+		"commonNames": "Cockspur Hawthorn",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": [
+			"All"
+		],
+		"minPlantZone": 3,
+		"maxPlantZone": 7,
+		"forms": [
+			"Tree",
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 10.7,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Pollinators",
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Grossulariaceae",
+		"genus": "Itea",
+		"species": "virginica",
+		"commonNames": "Virginia Sweet Spire",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 5,
+		"maxPlantZone": 9,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade",
+			"Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 2.4,
+		"flowerColor": [
+			"White"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Cupressaceae",
+		"genus": "Juniperus",
+		"species": "communis",
+		"commonNames": "Common Juniper",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 2,
+		"maxPlantZone": 6,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun"
+		],
+		"soilTolerances": [
+			"Dry",
+			"Well Drained",
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 3,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Ericaceae",
+		"genus": "Lyonia",
+		"species": "mariana",
+		"commonNames": "Stagger-bush",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 5,
+		"maxPlantZone": 9,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Partial Sun",
+			"Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 1.8,
+		"flowerColor": [
+			"White",
+			"Pink"
+		],
+		"floweringTime": [
+			"April",
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Hydrangeaceae",
+		"genus": "Philadelphus",
+		"species": "inodorus",
+		"commonNames": "Mock-orange",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 6,
+		"maxPlantZone": 8,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist"
+		],
+		"maxHeight": 3,
+		"flowerColor": [
+			"Orange"
+		],
+		"floweringTime": [
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Ericaceae",
+		"genus": "Rhododendron",
+		"species": "arborescens",
+		"commonNames": "Sweet Azalea",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 4,
+		"maxPlantZone": 7,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Well Drained",
+			"Acidic"
+		],
+		"maxHeight": 4.6,
+		"flowerColor": [
+			"White",
+			"Pink",
+			"Red",
+			"Yellow"
+		],
+		"floweringTime": [
+			"April",
+			"May",
+			"June"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Ericaceae",
+		"genus": "Rhododendron",
+		"species": "calendulaceum",
+		"commonNames": "Flame Azalea",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 5,
+		"maxPlantZone": 7,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Well Drained",
+			"Acidic"
+		],
+		"maxHeight": 3,
+		"flowerColor": [
+			"Yellow",
+			"Orange",
+			"Red"
+		],
+		"floweringTime": [
+			"April",
+			"May"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Rosaceae",
+		"genus": "Rosa",
+		"species": "virginiana",
+		"commonNames": "Virginina Rose",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 3,
+		"maxPlantZone": 7,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun"
+		],
+		"soilTolerances": [
+			"Dry",
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 1.8,
+		"flowerColor": [
+			"Pink"
+		],
+		"floweringTime": [
+			"July",
+			"August",
+			"September"
+		],
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Salicaceae",
+		"genus": "Salix",
+		"species": "candida",
+		"commonNames": "Hoary Willow",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 2,
+		"maxPlantZone": 6,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Wet"
+		],
+		"maxHeight": 1.5,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": null,
+		"notes": null
+	},
+	{
+		"family": "Ericaceae",
+		"genus": "Vaccinium",
+		"species": "angustifolium",
+		"commonNames": "Low Sweet Blueberry",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 2,
+		"maxPlantZone": 5,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun"
+		],
+		"soilTolerances": [
+			"Dry",
+			"Moist",
+			"Acidic"
+		],
+		"maxHeight": 0.6,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Fruit"
+		],
+		"notes": null
+	},
+	{
+		"family": "Caprifoliaceae",
+		"genus": "Viburnum",
+		"species": "trilobum",
+		"commonNames": "American Cranberrybush",
+		"currentRange": null,
+		"historicRange": null,
+		"ecoregions": null,
+		"minPlantZone": 2,
+		"maxPlantZone": 7,
+		"forms": [
+			"Shrub"
+		],
+		"uses": null,
+		"lightTolerances": [
+			"Sun",
+			"Partial Sun",
+			"Partial Shade"
+		],
+		"soilTolerances": [
+			"Moist",
+			"Well Drained"
+		],
+		"maxHeight": 3.7,
+		"flowerColor": null,
+		"floweringTime": null,
+		"deerTolerance": null,
+		"wildlifeValue": [
+			"Fruit"
+		],
+		"notes": null
+	}
+];
 
-const nameFilters = {'commonNames': true, 'family': false, 'scientificName': true};
+const nameFilters = {'commonNames': true, 'family': false, 'genus': true, 'species': true};
 const sliderFilters = {'maxHeight': true};
 const dropdownFilters = {'forms': true, 'uses': true, 'wildlifeValue': true, 'lightTolerances': false, 'soilTolerances': false, 'flowerColor': false, 'floweringTime': false};
 const allFilters = {...nameFilters, ...sliderFilters, ...dropdownFilters};
 
-let plantsTableColumns = [];
+const detailsFilters = {'commonNames': true, 'family': true, 'genus': true, 'species': true, 'maxHeight': true, 'forms': true, 'uses': true, 'wildlifeValue': true, 'lightTolerances': true, 'soilTolerances': true, 'flowerColor': true, 'floweringTime': true};
+
+
 
 function toTitleCase(str) {
 	return str.replace(/\w\S*/g, function(txt) {
@@ -1958,7 +2015,7 @@ function toTitleCase(str) {
 function jsonToTitleCase(obj) {
 	for (let key in obj) {
 		if (typeof obj[key] === 'string') {
-			if (key !== "notes" && key !== "scientificName" && key !== "description") {
+			if (key !== "notes" && key !== "species" && key !== "description") {
 				obj[key] = toTitleCase(obj[key]);
 			}
 		} else if (typeof obj[key] === 'object' && obj[key] !== null) {
@@ -1979,134 +2036,114 @@ let uniqueValues = {
 	flowerColor: new Set(),
 };
 
-// Initialize the table
-function populateTable(data) {
-	let thead = document.getElementById('plantsTable').querySelector('thead');
-	let tbody = document.getElementById('plantsTable').querySelector('tbody');
-	thead.innerHTML = '';
-	tbody.innerHTML = '';
-
-
-	//let row = tbody.insertRow();
-	// Add checkbox header column
-	//row.insertCell().outerHTML = "<th></th>";
-	plantsTableColumns.push({checkbox: true});
-	
-	// Dynamically add other columns from allFilters
-	Object.keys(allFilters).forEach(filter => {
-		let headerID = filter.split(/(?=[A-Z])/).join(' '); // Convert camelCase to spaces
-		let headerName = `${headerID.charAt(0).toUpperCase() + headerID.slice(1)}` // Capitalize first letter
-		//row.insertCell().outerHTML = "<th>" + headerName + "</th>";
-		plantsTableColumns.push({field: headerID, title: headerName, sortable: true, visible: allFilters[filter]});
-	});
-
-	data.forEach(plant => {
-		let row = tbody.insertRow();
-		
-		// Insert cell for checkbox
-		row.insertCell()
-
-		// Insert cells for nameFilters
-		Object.keys(nameFilters).forEach(filter => {
-			row.insertCell().textContent = plant[filter] ?? "";
-		});
-
-		// Insert cells for sliderFilters
-		Object.keys(sliderFilters).forEach(filter => {
-			row.insertCell().textContent = plant[filter] ?? "";
-		});
-
-		// Insert cells for dropdownFilters
-		Object.keys(dropdownFilters).forEach(filter => {
-			row.insertCell().textContent = plant[filter]?.join(', ') ?? "";
-		});
-
-		// Collect unique values for filters
-		plant.forms?.forEach(item => uniqueValues.forms.add(item));
-		plant.uses?.forEach(item => uniqueValues.uses.add(item));
-		plant.wildlifeValue?.forEach(item => uniqueValues.wildlifeValue.add(item));
-		plant.lightTolerances?.forEach(item => uniqueValues.lightTolerances.add(item));
-		plant.soilTolerances?.forEach(item => uniqueValues.soilTolerances.add(item));
-		plant.flowerColor?.forEach(item => uniqueValues.flowerColor.add(item));
-	});
-
-	// Repopulate dropdown with contents of new table
-	// populateDropdownFilters();
-}
-
-// Function to populate dropdowns with unique values
-function populateDropdownFromSet(dropdownId, valueSet) {
-	let dropdown = document.getElementById(dropdownId);
-
-	// Removes values in the dropdown before repopulating
-	/*while (dropdown.firstChild) {
-		dropdown.removeChild(dropdown.firstChild);
-	}*/
-
-	valueSet.forEach(value => {
-		let option = document.createElement('option');
-		option.value = option.textContent = value;
-		dropdown.appendChild(option);
-	});
-}
-
-function populateDropdownFilters() {
-	const dropdownIds = ['forms', 'uses', 'wildlifeValue', 'lightTolerances', 'soilTolerances', 'flowerColor'];
-	dropdownIds.forEach(id => populateDropdownFromSet(`${id}Filter`, uniqueValues[id]));
-}
-
-// This will be the function to apply filters
-function applyFilters() {
-	let filteredData = jsonData.plantlist;
-
-	// Apply text filters
-	const commonNameFilter = document.getElementById('commonNameFilter').value.toLowerCase();
-	const familyFilter = document.getElementById('familyFilter').value.toLowerCase();
-	const scientificNameFilter = document.getElementById('scientificNameFilter').value.toLowerCase();
-
-	filteredData = filteredData.filter(plant => {
-		return plant.commonNames.toLowerCase().includes(commonNameFilter) &&
-			plant.family.toLowerCase().includes(familyFilter) &&
-			plant.scientificName.toLowerCase().includes(scientificNameFilter);
-	});
-
-	// Apply slider filters
-	let plantZoneSliderInstance = $("#plantZoneSlider").data("ionRangeSlider");
-	let minZone = plantZoneSliderInstance.result.from;
-	let maxZone = plantZoneSliderInstance.result.to;
-
-	let maxHeightSliderInstance = $("#maxHeightSlider").data("ionRangeSlider");
-	let minHeight = maxHeightSliderInstance.result.from;
-	let maxHeight = maxHeightSliderInstance.result.to;
-
-	filteredData = filteredData.filter(plant => {
-		return parseInt(plant.minPlantZone, 10) >= minZone &&
-			parseInt(plant.maxPlantZone, 10) <= maxZone &&
-			(parseInt(plant.maxHeight, 10) || 0) >= minHeight &&
-			(parseInt(plant.maxHeight, 10) || 0) <= maxHeight;
-	});
-
-	//Apply dropdown filters
-	Object.keys(dropdownFilters).forEach(filterName => {
-		const selectedValues = Array.from(document.getElementById(`${filterName}Filter`).selectedOptions).map(opt => opt.value);
-		if (selectedValues.length) {
-			filteredData = filteredData.filter(plant => plant[filterName] && selectedValues.some(val => plant[filterName].includes(val)));
+let plantsTableColumns = [{ checkbox: true }];
+Object.keys(allFilters).forEach(filter => {
+    let headerName = filter.split(/(?=[A-Z])/).join(' ').replace(/^./, c => c.toUpperCase());
+    plantsTableColumns.push({
+        field: filter,
+        title: headerName,
+        sortable: true,
+        visible: allFilters[filter],
+        filterControl: (filter in dropdownFilters) ? 'select' : 'input',
+		formatter: function(value) {
+			return Array.isArray(value) ? value.join(', ') : value;
 		}
 	});
+});
 
-	// Repopulate the table with the filtered data
-	populateTable(filteredData);
-	
-	$('#plantsTable').bootstrapTable('refresh');
-	/*
-	$('#plantsTable').bootstrapTable('refreshOptions', {
+function populateTable(tableData) {
+    $('#plantsTable').bootstrapTable({
+        data: tableData,
+		columns: plantsTableColumns,
+		
 		checkboxHeader: true,
-		detailView: true
-	});*/
+		clickToSelect: true,
+		detailView: true,
+		detailViewIcon: true,
+		detailViewByClick: false,
+		detailFormatter: detailFormatter,
+        filterControl: true,
+		height: window.innerHeight - 30,
+		maintainMetaData: true,
+		pageList: [10, 25, 50, 100, 200, 500],
+		pageSize: 100,
+		pagination: true,
+		search: true,
+		searchAlign: 'left',
+		showColumns: true,
+		/*sidePagination: "server",*/
+		smartDisplay: true,
+		sortable: true,
+		sortStable: true
+    });
 }
 
+function populateDropdownFilters(data) {
+    Object.keys(dropdownFilters).forEach(filter => {
+        // Get all values and handle both strings and arrays
+        let values = data.map(plant => {
+            if (Array.isArray(plant[filter])) {
+                return plant[filter];
+            } else if (typeof plant[filter] === 'string') {
+                return plant[filter].split(',');
+            }
+            return [];
+        })
+        .flat()  // Flatten the result into a single array
+        .filter(Boolean);  // Removes null or undefined values
 
-const detailsFilters = {'commonNames': true, 'family': true, 'scientificName': true, 'maxHeight': true, 'forms': true, 'uses': true, 'wildlifeValue': true, 'lightTolerances': true, 'soilTolerances': true, 'flowerColor': true, 'floweringTime': true};
+        // Ensure uniqueness
+        let unique = [...new Set(values)];
+
+        // Populate the dropdown
+        $(`#${filter}Filter`).empty().append(unique.map(val => `<option value="${val}">${val}</option>`));
+    });
+}
+
+function applyFilters() {
+    let filteredData = jsonData;
+    
+    // Apply text filters
+	let filterCriteria = {};
+	Object.keys(nameFilters).forEach(filterKey => {
+		filterCriteria[filterKey] = document.getElementById(`${filterKey}Filter`).value.toLowerCase();
+	});
+
+	filteredData = filteredData.filter(plant => {
+		return Object.keys(filterCriteria).every(filterKey => {
+			let plantValue = plant[filterKey] ? plant[filterKey].toLowerCase() : '';
+			return plantValue.includes(filterCriteria[filterKey]);
+		});
+	});
+
+    // Apply slider filters
+    let plantZoneSliderInstance = $("#plantZoneSlider").data("ionRangeSlider");
+    let minZone = plantZoneSliderInstance.result.from;
+    let maxZone = plantZoneSliderInstance.result.to;
+
+    let maxHeightSliderInstance = $("#maxHeightSlider").data("ionRangeSlider");
+    let minHeight = maxHeightSliderInstance.result.from;
+    let maxHeight = maxHeightSliderInstance.result.to;
+
+    filteredData = filteredData.filter(plant => {
+        return plant.minPlantZone >= minZone &&
+            plant.maxPlantZone <= maxZone &&
+            plant.maxHeight >= minHeight &&
+            plant.maxHeight <= maxHeight;
+    });
+
+    // Apply dropdown filters
+    Object.keys(dropdownFilters).forEach(filterName => {
+        const selectedValues = Array.from(document.getElementById(`${filterName}Filter`).selectedOptions).map(opt => opt.value);
+        if (selectedValues.length) {
+            filteredData = filteredData.filter(plant => plant[filterName] && selectedValues.some(val => plant[filterName].includes(val)));
+        }
+    });
+
+    // Repopulate the table with the filtered data
+    $('#plantsTable').bootstrapTable('load', filteredData);
+}
+
 
 function detailFormatter(index, row) {
 	var html = [];
@@ -2115,13 +2152,9 @@ function detailFormatter(index, row) {
 
 	$.each(row, function (key, value) {
 		var filterKey = key.replace(/\s+/g, '');
-		console.log(key)
-		console.log(": ")
-		console.log(value)
-		console.log("\n")
 		if (detailsFilters[filterKey]) {
 			html.push('<tr>');
-			html.push('<td style="padding: 3px 50px 3px 70px;"><b>' + `${key.charAt(0).toUpperCase() + key.slice(1)}` + '</b></td>');
+			html.push('<td style="padding: 3px 50px 3px 70px;"><b>' + key.split(/(?=[A-Z])/).join(' ').replace(/^./, c => c.toUpperCase()) + '</b></td>');
 			html.push('<td style="padding: 3px 3px 3px 3px;">' + value + '</td>');
 			html.push('</tr>');
 		}
@@ -2132,12 +2165,10 @@ function detailFormatter(index, row) {
 	return html.join('');
 }
 
-window.onload = function() {
-	populateTable(jsonData.plantlist);
-	populateDropdownFilters();
-}
-
 $(document).ready(function() {
+    populateTable(jsonData);
+    populateDropdownFilters(jsonData);
+	
 	$("#plantZoneSlider").ionRangeSlider({
 		type: "double",
 		min: 1,
@@ -2148,7 +2179,7 @@ $(document).ready(function() {
 		skin: "round"
 	});
 
-	let maxHeight = Math.max(...jsonData.plantlist.map(plant => parseInt(plant.maxHeight, 10) || 0));
+	let maxHeight = Math.max(...jsonData.map(plant => parseInt(plant.maxHeight, 10) || 0));
 
 	$("#maxHeightSlider").ionRangeSlider({
 		type: "double",
@@ -2165,32 +2196,5 @@ $(document).ready(function() {
 		new MultipleSelect(`#${filter}Filter`, {
 			placeholder: `Select ${filter.replace(/([A-Z])/g, ' $1').toLowerCase()}...`
 		});
-	});
-
-	$('#plantsTable').bootstrapTable({
-		checkboxHeader: true,
-		clickToSelect: true,
-		detailView: true,
-		detailViewIcon: true,
-		detailViewByClick: false,
-		detailFormatter: detailFormatter,
-		maintainMetaData: true,
-		pageList: [10, 25, 50, 100, 200, 500],
-		pageSize: 100,
-		pagination: true,
-		search: true,
-		searchAlign: 'left',
-		showColumns: true,
-		/*sidePagination: "server",*/
-		smartDisplay: true,
-		sortable: true,
-		sortStable: true,
-		
-		columns: plantsTableColumns
-	})
-	
-	
-	$('#plantsTable').bootstrapTable('refreshOptions', {
-		height: window.innerHeight - 30
 	});
 });

@@ -17,81 +17,90 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
 
 	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="temp-styles.css">
 </head>
 <body>
 
 <div class="container clearfix">
 
 	<div id="filters">
-		<div class="filter-group">
-			<label for="commonNameFilter">Common Name</label>
-			<input type="text" class="form-control" id="commonNameFilter" placeholder="Filter by Common Name">
+		<div class="filter-group" id="name-filters">
+			<div class="filter-box">
+				<label for="commonNamesFilter">Common Names</label>
+				<input type="text" class="form-control" id="commonNamesFilter" placeholder="Filter by Common Name">
+			</div>
+			<div class="filter-box">
+				<label for="familyFilter">Family</label>
+				<input type="text" class="form-control" id="familyFilter" placeholder="Filter by Family">
+			</div>
+			<div class="filter-box">
+				<label for="genusFilter">Genus</label>
+				<input type="text" class="form-control" id="genusFilter" placeholder="Filter by Genus">
+			</div>
+			<div class="filter-box">
+				<label for="speciesFilter">Species</label>
+				<input type="text" class="form-control" id="speciesFilter" placeholder="Filter by Species">
+			</div>
+			<div class="filter-box">
+				<label for="zipcodeFilter">Zipcode</label>
+				<input type="text" class="form-control" id="zipcodeFilter" placeholder="Filter by Zipcode">
+			</div>
 		</div>
-		<div class="filter-group">
-			<label for="familyFilter">Family</label>
-			<input type="text" class="form-control" id="familyFilter" placeholder="Filter by Family">
+			
+			
+		<div class="filter-group" id="slider-filters">
+			<div class="filter-box">
+				<label for="plantZoneSlider">Plant Zone</label>
+				<input id="plantZoneSlider" type="text" value=""/>
+			</div>
+			<div class="filter-box">
+				<label for="maxHeightSlider">Max Height</label>
+				<input id="maxHeightSlider" type="text" value=""/>
+			</div>
 		</div>
-		<div class="filter-group">
-			<label for="scientificNameFilter">Scientific Name</label>
-			<input type="text" class="form-control" id="scientificNameFilter" placeholder="Filter by Scientific Name">
-		</div>
-		<div class="filter-group">
-			<label for="zipcodeFilter">Zipcode</label>
-			<input type="text" class="form-control" id="zipcodeFilter" placeholder="Filter by Zipcode">
-		</div>
-		
-		
-		<div class="filter-group">
-			<label for="plantZoneSlider">Plant Zone</label>
-			<input id="plantZoneSlider" type="text" value=""/>
-		</div>
-		<div class="filter-group">
-			<label for="maxHeightSlider">Max Height</label>
-			<input id="maxHeightSlider" type="text" value=""/>
-		</div>
-		
-		
-		<div class="filter-group">
-			<label for="formsFilter">Forms</label>
-			<select multiple class="chosen-select" id="formsFilter"></select>
-		</div>
-		<div class="filter-group">
-			<label for="usesFilter">Uses</label>
-			<select multiple class="chosen-select" id="usesFilter"></select>
-		</div>
-		<div class="filter-group">
-			<label for="wildlifeValueFilter">Wildlife Value</label>
-			<select multiple class="chosen-select" id="wildlifeValueFilter"></select>
-		</div>
-		<div class="filter-group">
-			<label for="lightTolerancesFilter">Light Tolerances</label>
-			<select multiple class="chosen-select" id="lightTolerancesFilter"></select>
-		</div>
-		<div class="filter-group">
-			<label for="soilTolerancesFilter">Soil Tolerances</label>
-			<select multiple class="chosen-select" id="soilTolerancesFilter"></select>
-		</div>
-		<div class="filter-group">
-			<label for="flowerColorFilter">Flower Color</label>
-			<select multiple class="chosen-select" id="flowerColorFilter"></select>
-		</div>
-		<div class="filter-group">
-			<label for="floweringTimeFilter">Flowering Time</label>
-			<select multiple class="chosen-select" id="floweringTimeFilter">
-				<option value="January">January</option>
-				<option value="February">February</option>
-				<option value="March">March</option>
-				<option value="April">April</option>
-				<option value="May">May</option>
-				<option value="June">June</option>
-				<option value="July">July</option>
-				<option value="August">August</option>
-				<option value="September">September</option>
-				<option value="October">October</option>
-				<option value="November">November</option>
-				<option value="December">December</option>
-			</select>
+			
+			
+		<div class="filter-group" id="dropdown-filters">
+			<div class="filter-box">
+				<label for="formsFilter">Forms</label>
+				<select multiple class="chosen-select" id="formsFilter"></select>
+			</div>
+			<div class="filter-box">
+				<label for="usesFilter">Uses</label>
+				<select multiple class="chosen-select" id="usesFilter"></select>
+			</div>
+			<div class="filter-box">
+				<label for="wildlifeValueFilter">Wildlife Value</label>
+				<select multiple class="chosen-select" id="wildlifeValueFilter"></select>
+			</div>
+			<div class="filter-box">
+				<label for="lightTolerancesFilter">Light Tolerances</label>
+				<select multiple class="chosen-select" id="lightTolerancesFilter"></select>
+			</div>
+			<div class="filter-box">
+				<label for="soilTolerancesFilter">Soil Tolerances</label>
+				<select multiple class="chosen-select" id="soilTolerancesFilter"></select>
+			</div>
+			<div class="filter-box">
+				<label for="flowerColorFilter">Flower Color</label>
+				<select multiple class="chosen-select" id="flowerColorFilter"></select>
+			</div>
+			<div class="filter-box">
+				<label for="floweringTimeFilter">Flowering Time</label>
+				<select multiple class="chosen-select" id="floweringTimeFilter">
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+			</div>
 		</div>
 
 		<button class="filterButton" onclick="applyFilters()">Apply Filters</button>
